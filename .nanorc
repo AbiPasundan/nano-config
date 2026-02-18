@@ -1,0 +1,45 @@
+include "/usr/share/nano/*.nanorc"
+set matchbrackets "(<[{)>]}"
+set smarthome
+set positionlog
+set atblanks
+set trimblanks
+set guidestripe 100
+set historylog
+set afterends
+set minibar
+set multibuffer
+set bracketcolor cyan
+set cutfromcursor
+set boldtext
+set whitespace "»·"
+set linenumbers
+set indicator
+set titlecolor white,blue
+set numbercolor yellow
+set statuscolor black,cyan
+set selectedcolor black,white
+set autoindent
+set tabsize 4
+set tabstospaces
+set softwrap
+set constantshow
+set mouse
+set smooth
+
+# Untuk macOS (jika install nano via Homebrew):
+# include "/opt/homebrew/share/nano/*.nanorc"
+
+
+# key binding
+bind ^S savefile main
+
+bind ^F whereis main
+
+bind ^Z undo main
+
+bind ^Y redo main
+
+bind ^Q exit all
+
+bind ^H replace main
