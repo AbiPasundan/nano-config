@@ -1,45 +1,184 @@
-include "/usr/share/nano/*.nanorc"
-set matchbrackets "(<[{)>]}"
-set smarthome
-set positionlog
-set atblanks
-set trimblanks
-set guidestripe 100
-set historylog
-set afterends
-set minibar
-set multibuffer
-set bracketcolor cyan
-set cutfromcursor
-set boldtext
-set whitespace "»·"
-set linenumbers
-set indicator
-set titlecolor white,blue
-set numbercolor yellow
-set statuscolor black,cyan
-set selectedcolor black,white
-set autoindent
-set tabsize 4
-set tabstospaces
-set softwrap
-set constantshow
-set mouse
-set smooth
+############################################
 
-# Untuk macOS (jika install nano via Homebrew):
+# NANO CONFIGURATION
+
+############################################
+
+# --- SYNTAX HIGHLIGHTING ---
+
+############################################
+
+# Memuat semua file syntax highlighting bawaan nano
+
+# (Go, JS, HTML, Dockerfile, dll)
+
+include "/usr/share/nano/*.nanorc"
+
+# Untuk macOS (nano dari Homebrew)
+
 # include "/opt/homebrew/share/nano/*.nanorc"
 
+############################################
 
-# key binding
+# --- NAVIGATION & CURSOR BEHAVIOR ---
+
+############################################
+
+# Tombol Home pindah ke awal teks dulu, lalu ke kolom pertama
+
+set smarthome
+
+# Menyimpan posisi cursor terakhir saat file dibuka ulang
+
+set positionlog
+
+# Cursor berhenti di akhir teks saat navigasi baris
+
+set afterends
+
+# Menampilkan posisi cursor (line/column) secara terus menerus
+
+set constantshow
+
+# Menampilkan indikator posisi scroll di sisi kanan
+
+set indicator
+
+############################################
+
+# --- EDITING BEHAVIOR ---
+
+############################################
+
+# Auto indent mengikuti baris sebelumnya
+
+set autoindent
+
+# Indent menggunakan 4 spasi
+
+set tabsize 4
+
+# Mengubah TAB menjadi spasi
+
+set tabstospaces
+
+# Menjaga indent tetap rapi saat di area kosong
+
+set atblanks
+
+# Menghapus trailing whitespace saat save
+
+set trimblanks
+
+# Cut dimulai dari posisi cursor (bukan seluruh baris)
+
+set cutfromcursor
+
+############################################
+
+# --- VISUAL & READABILITY ---
+
+############################################
+
+# Menampilkan nomor baris
+
+set linenumbers
+
+# Mode status bar minimalis
+
+set minibar
+
+# Highlight pasangan bracket
+
+set matchbrackets "(<[{)>]}"
+set bracketcolor cyan
+
+# Menampilkan whitespace (spasi & tab)
+
+set whitespace "»·"
+
+# Highlight kolom ke-100 (ruler coding)
+
+set guidestripe 100
+
+# Membuat teks tebal jika terminal mendukung
+
+set boldtext
+
+# Wrap teks panjang ke baris berikutnya
+
+set softwrap
+
+# Scroll lebih halus
+
+set smooth
+
+############################################
+
+# --- COLOR CONFIGURATION ---
+
+############################################
+
+# Warna title bar
+
+set titlecolor white,blue
+
+# Warna nomor baris
+
+set numbercolor yellow
+
+# Warna status bar
+
+set statuscolor black,cyan
+
+# Warna teks yang diseleksi
+
+set selectedcolor black,white
+
+############################################
+
+# --- PRODUCTIVITY ---
+
+############################################
+
+# Menyimpan histori pencarian
+
+set historylog
+
+# Membuka banyak file sekaligus (multi-buffer)
+
+set multibuffer
+
+# Mengaktifkan mouse support
+
+set mouse
+
+############################################
+
+# --- KEY BINDINGS ---
+
+############################################
+
+# Ctrl+S → Save file
+
 bind ^S savefile main
+
+# Ctrl+F → Search
 
 bind ^F whereis main
 
+# Ctrl+Z → Undo
+
 bind ^Z undo main
+
+# Ctrl+Y → Redo
 
 bind ^Y redo main
 
+# Ctrl+Q → Exit nano
+
 bind ^Q exit all
+
+# Ctrl+H → Replace text
 
 bind ^H replace main
