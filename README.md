@@ -1,12 +1,20 @@
 # Nano Config
 
+![screenshot 1](demo.gif)
+
 ## What is This?
 
 This is my personal nano text editor customize.
 
 In my case I often check file using nano and in the time I feel bored look at the nano editor it's feel so boring
 
-So I customize nano for my personal use add color highligting, minimap cutom key binding etc
+So I customize nano for my personal use, add color highligting, minimap, cutom key bindi    ng, etc
+
+## How To Use
+
+To use this config create file .nanorc in your home directory "~/.nanorc" and put this code
+
+Or just copy file .nanorc in this repo and put in the your home directory
 
 ## Key Binding
 
@@ -21,4 +29,18 @@ For key binding I cutom some key that I familiar with it
 
 ## Screenshot
 
-![screenshot 1](sc1.png)
+### Json
+
+![Json screenshot](img/jsonScreenshot.png)
+
+### HTML
+
+![Html screenshot](img/htmlScreenshot.png)
+
+### CSS
+
+![Css screenshot](img/cssScreenshot.png)
+
+### Go
+
+![Go screenshot](img/goScreenshot.png)
