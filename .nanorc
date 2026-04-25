@@ -1,0 +1,26 @@
+############################################
+# NANO CONFIGURATION (~/.nanorc)
+############################################
+
+# --- SYNTAX HIGHLIGHTING ---
+############################################
+# Load all built-in syntax highlighting files of nano.
+include "/usr/share/nano/*.nanorc"
+
+# For macOS (nano from Homebrew) – Uncomment if using macOS
+# include "/opt/homebrew/share/nano/*.nanorc"
+
+
+# --- NAVIGATION & CURSOR BEHAVIOR ---
+############################################
+# The Home key moves to the beginning of the text first, then to the first column.
+set smarthome
+
+# Save the last cursor position when the file is reopened.
+set positionlog
+
+# Cursor stops at the end of the text when navigating lines.
+set afterends
+
+# Display scroll position indicator on the right side.
+set indicator
