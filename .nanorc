@@ -45,3 +45,28 @@ set trimblanks
 # Cut starts from the cursor position (not the entire line).
 set cutfromcursor
 
+# --- VISUAL & READABILITY ---
+############################################
+# Show number of column
+set linenumbers
+
+# Minimalist status bar mode (includes cursor position).
+set minibar
+
+# Highlight matching brackets (using built-in reverse video).
+set matchbrackets "(<[{)>]}"
+
+# Display whitespace (spaces & tabs).
+set whitespace "»·"
+
+# Highlight column 100 (coding ruler).
+set guidestripe 100
+
+# Render text bold if the terminal supports it.
+set boldtext
+
+# Wrap long teks to the next column
+set softwrap
+
+# Scroll more supports
+# set smooth
