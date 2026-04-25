@@ -101,3 +101,33 @@ set multibuffer
 
 # Enable mouse support (click to move cursor).
 set mouse
+
+############################################
+# --- KEY BINDINGS ---
+############################################
+# Ctrl+S → Save file
+bind ^S savefile main
+
+# Ctrl+F → Search
+bind ^F whereis main
+
+# Ctrl+Z → Undo
+bind ^Z undo main
+
+# Ctrl+Y → Redo
+bind ^Y redo main
+
+# Ctrl+Q → Exit nano
+bind ^Q exit all
+
+# Ctrl+H → Replace text
+bind ^H replace main
+
+# Ctrl+C → Copy
+bind ^C copy main
+
+# Ctrl+X → Cut
+bind ^X cut main
+
+# Ctrl+V → Paste
+bind ^V paste main
