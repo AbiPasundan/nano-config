@@ -90,3 +90,14 @@ set promptcolor black,green
 
 # Color selection text
 set selectedcolor black,white
+
+# --- PRODUCTIVITY ---
+############################################
+# Save search history.
+set historylog
+
+# Open multiple files simultaneously (multi-buffer).
+set multibuffer
+
+# Enable mouse support (click to move cursor).
+set mouse
