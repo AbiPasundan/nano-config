@@ -70,3 +70,23 @@ set softwrap
 
 # Scroll more supports
 # set smooth
+
+# --- COLOR CONFIGURATION ---
+############################################
+# Color of title bar
+set titlecolor white,blue
+
+# Color number column
+set numbercolor yellow
+
+# Color of status bar
+set statuscolor black,cyan
+
+# Color of error message
+set errorcolor brightwhite,red
+
+# Color first prompt search
+set promptcolor black,green
+
+# Color selection text
+set selectedcolor black,white
