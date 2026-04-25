@@ -24,3 +24,24 @@ set afterends
 
 # Display scroll position indicator on the right side.
 set indicator
+
+# --- EDITING BEHAVIOR ---
+############################################
+# Auto-indent follows the previous line.
+set autoindent
+
+# Indent using 4 spaces.
+set tabsize 4
+
+# Convert TAB to spaces.
+set tabstospaces
+
+# Keep indentation neat in empty areas.
+set atblanks
+
+# Remove trailing whitespace on save.
+set trimblanks
+
+# Cut starts from the cursor position (not the entire line).
+set cutfromcursor
+
